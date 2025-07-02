@@ -1,6 +1,13 @@
-🎯 Project Summary
+# Donation Management Platform
+
+## 🎯 Project Summary
+
 A comprehensive donation management platform demonstrating PHP/Laravel and C#/.NET Core integration with proper accounting principles, designed specifically for Christian relief organizations like Samaritan's Purse.
-🏗️ Architecture Overview
+
+## 🏗️ Architecture Overview
+
+The system is built with a decoupled architecture, leveraging PHP/Laravel for the main application and C#/.NET Core for specialized financial services, all interacting with a shared MySQL database.
+
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   PHP/Laravel   │    │  C#/.NET Core   │    │     MySQL       │
 │   (Main App)    │◄──►│   (Services)    │◄──►│   Database      │
@@ -10,11 +17,57 @@ A comprehensive donation management platform demonstrating PHP/Laravel and C#/.N
 │ • Public Portal │    │ • Analytics     │    │ • Financial     │
 │ • Receipts      │    │ • Fund Tracking │    │ • Campaigns     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
-📁 Project Structure
+
+
+## 🚀 Key Features Demonstrated
+
+### PHP/Laravel Components:
+* **Donor Management**: CRUD operations with relationship mapping
+* **Donation Processing**: Payment integration with Stripe/PayPal simulation
+* **Receipt Generation**: PDF creation using DomPDF
+* **Email Notifications**: Automated thank-you emails and receipts
+* **Public Donation Portal**: Responsive frontend for online donations
+* **Campaign Management**: Track different fundraising campaigns
+
+### C#/.NET Core Components:
+* **Accounting Engine**: Automated journal entry creation
+* **Financial Reporting**: Generate statements and fund reports
+* **Data Analytics**: Donation trends and donor insights
+* **RESTful APIs**: Clean API design with proper HTTP methods
+* **Fund Accounting**: Restricted vs unrestricted fund tracking
+
+### Integration Features:
+* **HTTP API Communication**: PHP calls C# services via REST APIs
+* **Shared Database**: Both applications use the same MySQL database
+* **Containerization**: Docker setup for easy deployment
+* **Error Handling**: Graceful failure handling between services
+
+## 🛠️ Technologies Used
+
+### Backend:
+* PHP 8.1+ with Laravel 10
+* C# .NET 6 with ASP.NET Core Web API
+* MySQL 8.0 for data persistence
+* Entity Framework Core for C# data access
+* Eloquent ORM for PHP data access
+
+### Frontend:
+* HTML5/CSS3 with Bootstrap 5
+* JavaScript (ES6+) for interactivity
+* Chart.js for data visualization
+* Blade templating engine
+
+### DevOps & Tools:
+* Docker & Docker Compose for containerization
+* Git for version control
+* PHPUnit and xUnit for testing
+* Swagger/OpenAPI for API documentation
+
+## 📁 Project Structure
+
 donation-management-system/
 ├── README.md                          # Project documentation
 ├── docker-compose.yml                 # Container orchestration
-├── 
 ├── frontend/                          # Shared UI assets
 │   ├── css/
 │   │   ├── bootstrap.min.css
@@ -67,7 +120,7 @@ donation-management-system/
 │   │   ├── Controllers/
 │   │   │   ├── AccountingController.cs
 │   │   │   ├── ReportsController.cs
-│   │   │   └── AnalyticsController.cs
+│   │   │   ├── AnalyticsController.cs
 │   │   ├── Models/
 │   │   │   ├── JournalEntry.cs
 │   │   │   ├── FinancialAccount.cs
@@ -87,53 +140,26 @@ donation-management-system/
 │       └── AccountingServiceTests.cs
 │
 └── database/                          # Shared Database Scripts
-    ├── schema.sql                     # Complete database schema
-    ├── seed-data.sql                  # Sample data for testing
-    └── financial-accounts-setup.sql   # Chart of accounts setup
-🚀 Key Features Demonstrated
-PHP/Laravel Components:
+├── schema.sql                     # Complete database schema
+├── seed-data.sql                  # Sample data for testing
+└── financial-accounts-setup.sql   # Chart of accounts setup
 
-Donor Management: CRUD operations with relationship mapping
-Donation Processing: Payment integration with Stripe/PayPal simulation
-Receipt Generation: PDF creation using DomPDF
-Email Notifications: Automated thank-you emails and receipts
-Public Donation Portal: Responsive frontend for online donations
-Campaign Management: Track different fundraising campaigns
 
-C#/.NET Core Components:
+## ⚙️ Setup and Installation (Optional - Add your specific instructions here)
 
-Accounting Engine: Automated journal entry creation
-Financial Reporting: Generate statements and fund reports
-Data Analytics: Donation trends and donor insights
-RESTful APIs: Clean API design with proper HTTP methods
-Fund Accounting: Restricted vs unrestricted fund tracking
+*(You'll need to fill this section with instructions on how to set up and run your project locally. This typically includes steps for cloning the repository, installing dependencies for both PHP/Laravel and .NET Core, setting up the database, and configuring environment variables.)*
 
-Integration Features:
+Example subsections:
+* **Prerequisites** (e.g., Docker Desktop, PHP, Composer, .NET SDK)
+* **Clone the Repository**
+* **Environment Configuration**
+* **Database Setup**
+* **Running the Applications**
+* **Running Tests**
 
-HTTP API Communication: PHP calls C# services via REST APIs
-Shared Database: Both applications use same MySQL database
-Containerization: Docker setup for easy deployment
-Error Handling: Graceful failure handling between services
 
-🛠️ Technologies Used
-Backend:
+## 📄 License 
 
-PHP 8.1+ with Laravel 10
-C# .NET 6 with ASP.NET Core Web API
-MySQL 8.0 for data persistence
-Entity Framework Core for C# data access
-Eloquent ORM for PHP data access
+*(Specify the license under which your project is distributed, e.g., MIT, Apache 2.0.)*
 
-Frontend:
-
-HTML5/CSS3 with Bootstrap 5
-JavaScript (ES6+) for interactivity
-Chart.js for data visualization
-Blade templating engine
-
-DevOps & Tools:
-
-Docker & Docker Compose for containerization
-Git for version control
-PHPUnit and xUnit for testing
-Swagger/OpenAPI for API documentation
+---
