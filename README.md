@@ -7,7 +7,7 @@ A comprehensive donation management platform demonstrating PHP/Laravel and C#/.N
 ## 🏗️ Architecture Overview
 
 The system is built with a decoupled architecture, leveraging PHP/Laravel for the main application and C#/.NET Core for specialized financial services, all interacting with a shared MySQL database.
-
+```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   PHP/Laravel   │    │  C#/.NET Core   │    │     MySQL       │
 │   (Main App)    │◄──►│   (Services)    │◄──►│   Database      │
@@ -17,7 +17,7 @@ The system is built with a decoupled architecture, leveraging PHP/Laravel for th
 │ • Public Portal │    │ • Analytics     │    │ • Financial     │
 │ • Receipts      │    │ • Fund Tracking │    │ • Campaigns     │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
-
+```
 
 ## 🚀 Key Features Demonstrated
 
@@ -64,7 +64,7 @@ The system is built with a decoupled architecture, leveraging PHP/Laravel for th
 * Swagger/OpenAPI for API documentation
 
 ## 📁 Project Structure
-
+```
 donation-management-system/
 ├── README.md                          # Project documentation
 ├── docker-compose.yml                 # Container orchestration
@@ -143,7 +143,7 @@ donation-management-system/
 ├── schema.sql                     # Complete database schema
 ├── seed-data.sql                  # Sample data for testing
 └── financial-accounts-setup.sql   # Chart of accounts setup
-
+```
 
 ## ⚙️ Setup and Installation (Optional - Add your specific instructions here)
 
